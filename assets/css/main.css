@@ -157,8 +157,8 @@ li,
   --tp-grey-2: #878898;
   --tp-grey-3: #f2f2f2;
   --tp-grey-4: #565764;
-  --tp-grey-5: #EFF4E0;
-  --tp-grey-6: #555555;
+  --tp-grey-5: #dfa4783b;
+  --tp-grey-6: #dfa4783b;
   --tp-border-1: #efeff5;
   --tp-theme-primary: #4230d3;
   --tp-theme-secondary: #ff7a41;
@@ -893,7 +893,7 @@ input[type=color] {
   padding: 17px 39px;
   font-weight: 500;
   font-size: 16px;
-  color: #161617;
+  color: #fff;
   border-radius: 25px;
   display: inline-block;
   letter-spacing: -0.02em;
@@ -5405,6 +5405,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .tp-hero-2-btn {
   background: var(--tp-common-black);
+  color: var(--tp-common-white);
   border-radius: 100px;
 }
 
@@ -5491,7 +5492,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-hero-2-shape-icon {
-  background: linear-gradient(143deg, #92f4c7 0%, #2dc17b 92.49%);
+  background: linear-gradient(143deg, #d45b15 0%, #d45b15 92.49%);
   border-radius: 4px;
   width: 40px;
   height: 40px;
@@ -8523,7 +8524,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .tp-counter-2-wrap {
-  background: #eff4e0;
+  background: #dfa4783b;
   border-radius: 15px;
   padding: 33px 30px 26px 40px;
 }
@@ -9094,7 +9095,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   width: 50%;
   border-radius: 0 10px 0 0;
   width: 43%;
-  background: #eff4e0;
+  background: #dfa4783b;
   padding-left: 95px;
   height: 100%;
 }
@@ -9176,7 +9177,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .tp-testimonial-2-big-title {
   font-size: 320px;
   letter-spacing: -0.02em;
-  color: #eff4e0;
+  color: #dfa4783b;
   bottom: -140px;
   right: -20px;
   margin-bottom: 0;
@@ -9890,7 +9891,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .tp-chose-2-thumb {
-  background: linear-gradient(179deg, #eff4e0 0%, #fdfff8 100%);
+  background: linear-gradient(179deg, #dfa4783b 0%, #dfa4783b 100%);
   border-radius: 30px;
   padding: 65px 64px 82px 58px;
   width: 100%;
@@ -12863,7 +12864,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .tp-cta-box-icon {
   border-radius: 100%;
-  background: #eff4e0;
+  background: #dfa4783b;
   width: 80px;
   height: 80px;
   margin-right: 16px;
@@ -14064,4 +14065,10 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .d-none {
   display: none;
+}
+
+.hero-img {
+  width: 820px;
+  height: 820px;
+  object-fit: cover;
 }

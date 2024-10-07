@@ -84,7 +84,7 @@
 	smoothSctoll();
 
 	// 06. Nice Select Js//
-	$('select').niceSelect();
+	// $('select').niceSelect();
 
 
   if ($('.grid').length != 0) {  

@@ -87,27 +87,27 @@
 	// $('select').niceSelect();
 
 
-  if ($('.grid').length != 0) {  
-		var $grid = $('.grid').imagesLoaded( function() {
-		  $('.grid').isotope({
-			itemSelector: '.grid-item',
-			percentPosition: true,
-			masonry: {
-			  columnWidth: 1
-			}
-		  })
-  
-		// filter items on button click
-		$('.tp-portfolio-filter').on( 'click', 'button', function() {
-		  var filterValue = $(this).attr('data-filter');
-		  $grid.isotope({ filter: filterValue });
-		});
-		  //for menu active class
-		  $('.tp-portfolio-filter button').on('click', function (event) {
-			$(this).siblings('.active').removeClass('active');
-			$(this).addClass('active');
-			event.preventDefault();
-		  });
+	if ($('.grid').length != 0) {
+		var $grid = $('.grid').imagesLoaded(function () {
+			$('.grid').isotope({
+				itemSelector: '.grid-item',
+				percentPosition: true,
+				masonry: {
+					columnWidth: 1
+				}
+			})
+
+			// filter items on button click
+			$('.tp-portfolio-filter').on('click', 'button', function () {
+				var filterValue = $(this).attr('data-filter');
+				$grid.isotope({ filter: filterValue });
+			});
+			//for menu active class
+			$('.tp-portfolio-filter button').on('click', function (event) {
+				$(this).siblings('.active').removeClass('active');
+				$(this).addClass('active');
+				event.preventDefault();
+			});
 		});
 	}
 
@@ -180,15 +180,15 @@
 		selector: ".filesizecount",
 		pulse: 2,
 	});
-	
+
 	// 13. for header lang //
 	if ($("#tp-header-lang-toggle").length > 0) {
-		window.addEventListener('click', function(e){
-	
-			if (document.getElementById('tp-header-lang-toggle').contains(e.target)){
+		window.addEventListener('click', function (e) {
+
+			if (document.getElementById('tp-header-lang-toggle').contains(e.target)) {
 				$(".tp-lang-list").toggleClass("tp-lang-list-open");
 			}
-			else{
+			else {
 				$(".tp-lang-list").removeClass("tp-lang-list-open");
 			}
 		});
@@ -196,11 +196,11 @@
 
 	// 14. header-search-class-active
 	if ($("#tp-header-3-search").length > 0) {
-		window.addEventListener('click', function(e){
-			if (document.getElementById('tp-header-3-search').contains(e.target)){
+		window.addEventListener('click', function (e) {
+			if (document.getElementById('tp-header-3-search').contains(e.target)) {
 				$(".tp-header-3-search-input").toggleClass("active");
 			}
-			else{
+			else {
 				$(".tp-header-3-search-input").removeClass("active");
 			}
 		});
@@ -233,6 +233,28 @@
 		);
 	}
 	if ($("#tp-nav-monthly").length) tabtable_active_1();
+
+	// Function to get the current year
+	function getCurrentYear() {
+		return new Date().getFullYear();
+	}
+
+	// Function to get the full date (e.g., October 9, 2024)
+	function getCurrentDate() {
+		const date = new Date();
+		const options = { year: 'numeric', month: 'long', day: 'numeric' };
+		return date.toLocaleDateString(undefined, options);
+	}
+
+	// After the DOM is ready, update the elements
+	$(document).ready(function () {
+		// Update the current year where needed
+		$('#year').text(getCurrentYear());
+
+		// Update the current full date where needed
+		$('#fullDate').text(getCurrentDate());
+	});
+
 
 
 

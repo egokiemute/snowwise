@@ -133,15 +133,15 @@
 
 
 	// 08. Offcanvas Js
-	$(".offcanvas-open-btn").on("click", function () {
+	$(document).on("click", ".offcanvas-open-btn", function () {
 		$(".offcanvas__area").addClass("offcanvas-opened");
 		$(".body-overlay").addClass("opened");
 	});
-	$(".offcanvas-close-btn ,.tp-main-menu-mobile .tp-onepage-menu li a  > *:not(button)").on("click", function () {
+	
+	$(document).on("click", ".offcanvas-close-btn, .tp-main-menu-mobile .tp-onepage-menu li a > *:not(button)", function () {
 		$(".offcanvas__area").removeClass("offcanvas-opened");
 		$(".body-overlay").removeClass("opened");
 	});
-
 
 	// 09. Body overlay Js
 	$(".body-overlay").on("click", function () {

@@ -133,22 +133,14 @@
         <div class="offcanvas__content">
           <div class="offcanvas__top mb-40">
             <div class="offcanvas__logo">
-              <a href="index.html"
-                ><img
-                  data-width="120"
-                  src="assets/img/logo/logo.png"
-                  alt="logo"
+              <a href="/"
+                ><img data-width="120" src="../assets/img/logo/logo.png" alt=""
               /></a>
             </div>
           </div>
-          <nav class="tp-offcanvas-menu">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
-          </nav>
+          <div class="tp-offcanvas-menu fix d-xl-none mb-30">
+            <nav></nav>
+          </div>
           <div class="offcanvas-info mb-50">
             <div class="offcanvas__contact-content d-flex">
               <div class="offcanvas__contact-content-icon">
@@ -156,8 +148,8 @@
               </div>
               <div class="offcanvas__contact-content-content">
                 <a href="https://maps.app.goo.gl/52eJrQW471uhStBWA"
-                  >105 North The Forge Forth Banks Newcastle Upon NE1 3AA</a
-                >
+                  >105 North The Forge Forth Banks Newcastle Upon NE1 3AA
+                </a>
               </div>
             </div>
             <div class="offcanvas__contact-content d-flex">
@@ -196,65 +188,67 @@
 
     <header>
       <!-- header-area-start -->
-      <div id="header-sticky" class="tp-header-area tp-header-hight p-relative">
-        <div class="container container-1435">
-          <div class="tp-header-box p-relative">
-            <div class="row align-items-center">
-              <div class="col-xl-2 col-lg-5 col-md-3 col-6">
-                <div class="tp-header-logo">
-                  <a href="/"
-                    ><img
-                      data-width="120"
-                      src="../assets/img/logo/logo.png"
-                      alt="logo"
-                  /></a>
+      <div class="tp-header-area tp-header-transparent">
+        <div class="tp-header-2-top d-none d-md-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="tp-header-discount">
+                  <!-- <p><img class="mr-5" src="assets/img/header/rocket.png" alt="rocket"> End of Year Sale: <span>Save up to 35%</span> on Tasks</p> -->
                 </div>
               </div>
-              <div class="col-xl-6 col-lg-2 d-none d-lg-block">
-                <div class="tp-main-menu d-none d-xl-block">
-                  <nav class="tp-mobile-menu-active">
-                    <ul>
-                      <li class="has-dropdown p-static">
-                        <a href="/">Home</a>
-                      </li>
-                      <li class="is-active">
-                        <a href="/about/">About Us</a>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="/services/">Services</a>
-                      </li>
-                      <li class="has-dropdown">
-                        <a href="/contact/">Contact</a>
-                      </li>
-                      <!-- <li class="has-dropdown">
-                                 <a href="/works/">Portfolio</a>
-                               </li> -->
-                    </ul>
-                  </nav>
+            </div>
+          </div>
+        </div>
+        <div id="header-sticky" class="tp-header-2-bottom">
+          <div class="container">
+            <div class="tp-header-2-wrapper p-relative">
+              <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-6 col-md-6 col-6">
+                  <div class="tp-header-logo">
+                    <a href="/"
+                      ><img
+                        data-width="120"
+                        src="../assets/img/logo/logo-white.png"
+                        alt="logo"
+                    /></a>
+                  </div>
                 </div>
-              </div>
-              <div class="col-xl-4 col-lg-5 col-md-9 col-6">
-                <div
-                  class="tp-header-right d-flex align-items-center justify-content-end"
-                >
+                <div class="col-xl-7 d-none d-xl-block">
+                  <div class="tp-main-menu tp-main-menu-2 text-end">
+                    <nav class="tp-mobile-menu-active">
+                      <ul>
+                        <li class="p-static">
+                          <a href="/">Home</a>
+                        </li>
+                        <li class="is-active">
+                          <a href="/about/">About Us</a>
+                        </li>
+                        <li class="">
+                          <a href="/services/">Services</a>
+                        </li>
+                        <li class="">
+                          <a href="/contact/">Contact</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-6">
                   <div
-                    id="tp-header-3-search"
-                    class="tp-header-3-search p-relative"
-                  ></div>
-                  <div class="tp-header-inner-btn ml-35 d-none d-sm-block">
+                    class="tp-header-2-btn d-flex justify-content-end align-items-center"
+                  >
                     <a
-                      class="tp-btn-gradient tp-gradient-bg d-inline-block"
-                      href="/contact"
+                      class="tp-btn-yellow-radius d-none d-md-block"
+                      href="/contact/"
                       >Contact Us</a
                     >
-                  </div>
-                  <div
-                    class="tp-header-5-menu-bar tp-header-4-menu-bar d-block d-xl-none"
-                  >
-                    <button class="tp-offcanvas-open-btn offcanvas-open-btn">
-                      <span></span>
-                      <span></span>
-                    </button>
+                    <div class="tp-header-5-menu-bar d-block d-xl-none ml-15">
+                      <button class="tp-offcanvas-open-btn offcanvas-open-btn">
+                        <span></span>
+                        <span></span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1170,7 +1164,7 @@
       <!-- tp-chose-area-end -->
 
       <!-- brand area start -->
-      <div class="tp-brand-area pb-120 fix">
+      <!-- <div class="tp-brand-area pb-120 fix">
         <div class="container">
           <div class="row">
             <div class="col-xl-12">
@@ -1213,7 +1207,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- brand area end -->
 
       <!-- tp-chose-area-start -->
